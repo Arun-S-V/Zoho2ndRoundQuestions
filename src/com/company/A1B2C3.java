@@ -15,6 +15,10 @@ public class A1B2C3 {
 
         for(int i =0;i<array.length;i++){
            System.out.print((char)((65+array[i])-1)+" ");
+           //System.out.print((char)(65+array[i]+array[i+1]-1)+" ");
+        }
+        for(int i =0;i<array.length/2;i++){
+            System.out.print((char)(65+array[i]+array[i+1]-1)+" ");
         }
     }
 }
