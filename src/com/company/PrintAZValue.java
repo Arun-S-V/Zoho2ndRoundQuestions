@@ -2,7 +2,7 @@ package com.company;
 
 public class PrintAZValue {
     public static void main(String args[]) {
-        int number = 51;
+        int number = 100;
         StringBuilder str = new StringBuilder();
         while(number >0){
             int rem = number%26;
@@ -16,5 +16,9 @@ public class PrintAZValue {
             }
         }
         System.out.print(str.reverse());
+        System.out.println();
+//        for(int i =str.length()-1;i>=0;i--){
+//            System.out.print(str.charAt(i)+" ");
+//        }
     }
 }

@@ -1,11 +1,10 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FactorDescendingOrder {
     public static void main(String args[]) {
-        int array[] = new int[]{1,2,3,4,5,6,10,12,100,1000,999999999};
+        int array[] = new int[]{1,2,3,4,5,6,10,12,1040,1000};
         int arraySize = array.length;
         int newArray [] = new int [arraySize];
         int count = 0;

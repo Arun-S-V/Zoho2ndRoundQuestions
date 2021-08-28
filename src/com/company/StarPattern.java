@@ -2,7 +2,7 @@ package com.company;
 
 public class StarPattern {
     public static void main(String args[]){
-        String str = "BackSpace123456";
+        String str = "BackSpace12345ad6";
         int n = str.length();
         for(int i = 0;i<n;i++){
             int j = n-i-1;
