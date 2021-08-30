@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MatchSubString {
     public static void main(String args[]){
         boolean answer = true;
-        String str = "arunop12";
+        String str = "arunop123";
         String target = "123";
         int n = str.length();
         int subN = target.length();
