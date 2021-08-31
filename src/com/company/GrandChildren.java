@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GrandChildren {
@@ -10,16 +11,22 @@ public class GrandChildren {
                                             {"rooney", "ronaldo" },
                                             {"shaw", "rooney" }
                                            };
+//        String[][] family = new String[4][2];
+//        for(int i =0;i<4;i++){
+//            for(int j =0;j<2;j++){
+//                family[i][j] = scan.next();
+//            }
+//        }
+        System.out.println("Enter the name : ");
+//        String name = scan.next();
         int rowSize = family.length;
         int count =0;
-        System.out.println("Enter the name : ");
-        String name = scan.nextLine();
-//        String name = "ronaldo";
+       String name = scan.next();
         for(int i =0;i<rowSize;i++) {
-            if (name == family[i][1]) {
+            if (name.equals(family[i][1])) {
                 String temp = family[i][0];
                 for(int j=0;j<rowSize;j++){
-                    if(temp == family[j][1]){
+                    if(temp.equals(family[j][1])){
                         count++;
                     }
                 }
