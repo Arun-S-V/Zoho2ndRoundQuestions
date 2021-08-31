@@ -23,12 +23,8 @@ package com.company;
 public class StringToPrintPattern {
     public static void main(String args[]){
         String str = "pageDown";
-        int count = str.length()-1;
-        while(count!=0) {
-           if(count == str.length()) {
-                System.out.print(str.charAt(0));
-            }
-
+        int count = str.length();
+        while(count != 0) {
             for (int j = 0; j < str.length()-count+1; j++) {
                 System.out.print(str.charAt(j));
             }
