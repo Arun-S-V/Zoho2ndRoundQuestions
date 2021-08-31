@@ -23,7 +23,7 @@ public class ReverseStringKeepSpacePunctuation {
 //        System.out.println(list);
         int j = 0;
         for (int i = s.length() - 1; i >= 0; i--) {
-            for()
+          //  for()
             System.out.print(newString.substring(0,map.get(i)));
         }
     }
