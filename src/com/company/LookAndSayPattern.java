@@ -13,6 +13,7 @@ public class LookAndSayPattern {
             String new_str = "";
             int count = 1;
             char a = str.charAt(0);
+            System.out.println("Length : "+str.length());
             for(int j =1;j<str.length();j++){
                 if(str.charAt(j) != str.charAt(j-1)){
                     System.out.print(count + "" +a);
@@ -31,5 +32,3 @@ public class LookAndSayPattern {
         }
     }
 }
-
-
