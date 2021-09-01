@@ -7,7 +7,7 @@ public class FromNumber {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(3);
         list.add(4);
-        int range = 16;
+        int range = 15;
         for(int i=0;i<range;i=i+2){
             int n = list.get(i) * 10+3;
             int m = list.get(i) * 10+4;
@@ -19,7 +19,7 @@ public class FromNumber {
             list.add(p);
         }
         //System.out.println(list);
-        System.out.println(list.get(range-1));
+       // System.out.println(list.get(range-1));
         for(int i=0;i<range-1;i++){
             System.out.println(list.get(i));
         }
