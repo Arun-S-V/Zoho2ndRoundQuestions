@@ -8,7 +8,7 @@ public class Group2or3SumMulof3 {
         for(int i=0;i< array.length;i++){
             for(int j =i+1;j< array.length;j++){
                 sum = array[i]+array[j];
-                System.out.println(sum+" "+array[i]+" "+array[j]);
+                //System.out.println(sum+" "+array[i]+" "+array[j]);
                 if(sum%3 == 0){
                     count++;
                 }
@@ -20,7 +20,7 @@ public class Group2or3SumMulof3 {
             for(int j =i+1;j< array.length;j++){
                 for(int k =j+1;k<array.length;k++) {
                     sum = array[i] + array[j] + array[k];
-                    System.out.println(sum + " " + array[i] + " " + array[j] +" "+array[k]);
+                    //System.out.println(sum + " " + array[i] + " " + array[j] +" "+array[k]);
                     if (sum % 3 == 0) {
                         count++;
                     }
