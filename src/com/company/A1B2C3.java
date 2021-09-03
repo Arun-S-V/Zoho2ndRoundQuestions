@@ -1,24 +1,32 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class A1B2C3 {
-    public static void main(String args[]) {
-        Scanner scan = new Scanner(System.in);
-        String str = scan.nextLine();
-        int array[] = new int[str.length()];
-        for(int i =0;i<str.length();i++){
-            array[i] = str.charAt(i)-48;
-        }
-        //System.out.println(Arrays.toString(array));
 
-        for(int i =0;i<array.length;i++){
-           System.out.print((char)((65+array[i])-1)+" ");
-           //System.out.print((char)(65+array[i]+array[i+1]-1)+" ");
-        }
-        for(int i =0;i<array.length/2;i++){
-            System.out.print((char)(65+array[i]+array[i+1]-1)+" ");
+public class A1B2C3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        String str = in.nextLine();
+
+        for(int j=0; j<str.length(); j++) {
+            char a = str.charAt(j);
+            j++;
+            int b = ((int)str.charAt(j)-48);
+
+            if(j+1 >= str.length()) {
+                for(int i=0; i<b; i++)
+                    System.out.print(" 1st "+a);
+                break;
+            }
+
+            if (((int)str.charAt(j+1)-48)>1 && ((int)str.charAt(j+1)-48)<10) {
+                j++;
+                b = (b*10) + ((int)str.charAt(j)-48);
+            }
+
+            for(int i=0; i<b; i++)
+                System.out.print("  2nd "+a);
         }
     }
 }

@@ -2,19 +2,21 @@ package com.company;
 
 public class FindMAxSubsetNoAdjacent {
     public static void main(String args[]){
-        int array[] = {2,7,9,3,1};
+        int array[] = {2,70,1,3,1};
         int incl = array[0];
         int excl = 0;
-        int excl_new;
+        int sum;
         for(int i =1 ;i< array.length;i++) {
             if (incl > excl) {
-                excl_new = incl;
-            } else {
-                excl_new = excl;
+                sum = incl;
+            }
+            else {
+                sum = excl;
             }
             incl = excl + array[i];
-            excl = excl_new;
+            excl = sum;
         }
+
         if(incl>excl){
             System.out.println(incl);
         }
@@ -23,7 +25,6 @@ public class FindMAxSubsetNoAdjacent {
         }
     }
 }
-
 
 
 //class MaximumSum
